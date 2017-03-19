@@ -1,0 +1,6 @@
+<template>
+  <img class="profile-image" src.bind="tweet.user.profile_image_url" alt="User Profile Image" />
+  <h4 class="screen-name">${tweet.user.screen_name}</h4>
+  <h5 class="">rt:${tweet.retweet_count} | fav:${tweet.favorite_count}</h5>
+  <p class="description">${tweet.text}</p>
+</template>

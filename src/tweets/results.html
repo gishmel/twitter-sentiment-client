@@ -1,0 +1,10 @@
+<template>
+  <div class="page-host">
+    <form role="form" submit.delegate="getResults()">
+      <select value.bind="query">
+        <option repeat.for="query of queries" model.bind="query">${query.text}:${query.frequency}</option>
+      </select>
+      <button type="submit" class="btn btn-default">Get Saved Tweets!</button>
+    </form>
+  </div>
+</template>
